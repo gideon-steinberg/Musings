@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title> Gideon's Musings - Solving a Rubik's Cube is not magic</title>
+  </head>
+  <body>
+    <ol class="breadcrumb">
+      <li><a href="/Musings/">Home</a></li>
+      <li><a href="/Musings/tech.html">Technology</a></li>
+      <li><a href="/Musings/maths.html">Maths</a></li>
+      <li><a href="/Musings/society.html">Society</a></li>
+      <li><a href="/Musings/science.html">Science</a></li>
+      <li><a href="/Musings/other.html">Other</a></li>
+    </ol>
+    <div class="container-fluid">
+      <h1> Solving a Rubik's Cube is not magic </h1>
+      This is a rubik's cube:
+      </br>
+      <img src="/Musings/pics/rubiks_cube.jpg" alt="Rubik's Cube" height="500" width="500"/>
+      </br>
+      If you cannot solve this then watching someone taking a rubik's cube and solving it seems like magic.
+      </br>
+      How can someone take a random scramble and put it back together in a neat order?
+      </br></br>
+      I can solve a rubik's cube in around a minute.
+      </br>
+      It is actually really easy. It kinda gets boring once you learn how to solve it.
+      </br></br>
+      There are 43,252,003,274,489,856,000 number of states a rubik's cube can be in.
+      </br>
+      There is <strong>NO</strong> way to be able to solve it unless you know what you are doing.
+      </br>
+      One of these 43 quintillion states is the solved state. Your goal is to take one of these 43 quintillion states and move it to a specific one. This seems impossible but as I mentioned it becomes routine.
+      </br>
+      <h2> Properties of a Rubik's rube </h2>
+      The first thing to do to learn to solve a rubik's cube is to understand it's properties. I will outline them here.
+      </br>
+      If you want the rubik's cube to stay a mystery stop reading :)
+      </br></br>
+      There are three types of pieces. They are:
+      <ul>
+        <li> The center pieces with one face </li>
+        <li> The edge pieces with two faces </li>
+        <li> The corner pieces with three faces </li>
+      </ul>
+      As should be obvious when you had a little play with one (or think about it) the pieces can only occupy specific slots based on what type they are.
+      </br></br>
+      The center pieces are not part of the puzzle. No seriously, you cannot move them. You can rotate them (which correspondes to the 6 moves you can make) but they do not move.
+      </br>
+      A rubik's cube solver is moving the edge and corner pieces in relation to the centers.
+      </br></br>
+      The edge pieces have 12 spots they can occupy and two orientations they can be in.
+      </br>
+      The corner pieces have 8 spots they can occupy and three orientations they can be in.
+      </br></br>
+      This type of puzzle is known as group theory in mathematics.
+      </br>
+      I won't go into the specifics but they is a <strong>LOT</strong> of mathematics research into group theory.
+      </br>
+      Essentially each move and set of moves transforms the cube from one group to another and you can model it in maths.
+      <h2> How do you solve it? </h2>
+      Simple, you build it step by step.
+      </br>
+      <ol>
+        <li> Choose a colour to start with </li>
+        <li> Move the 4 edge pieces of that colour in the correct spots </li>
+        <li> Move the 4 corner pieces of that colour in the correct spots completing the first layer </li>
+        <li> Move the 4 edge pieces in the second layout into the correct spots completing the second layer </li>
+        <li> Orient the 4 edge pieces correctly on the last layer </li>
+        <li> Position the 4 corner pieces in the correct place on the last layer </li>
+        <li> Orient the 4 corner pieces correctly on the last layer </li>
+        <li> Position the 4 edge pieces in the correct place on the last layer </li>
+      </ol>
+      Each step is done without destroying your progress from before.
+      </br>
+      You need to learn an algorithm (or series of algorithms) to move specific pieces without wrecking your hard work.
+      </br></br>
+      Step 2 and step 3 can be solved intuatively given some time but the rest require thought (or looking it up).
+      </br>
+      Step 2 is often known as "Cross" as you are making a cross.
+      </br>
+      Step 3 and step 4 can be done together in something called F2L (First two layers). This is just faster than doing them by themselves :)
+      </br>
+      Step 5 and 7 are known as OLL (orienting the last layer) which can be done as one step.
+      </br>
+      Step 6 and 8 are known as PLL (permuting the last layer) which can be done as one step.
+      </br>
+      Step 5,6,7 and 8 can be done in any order and they are done in different ways. The way I have given is just how I do it.
+      </br></br>
+      I don't do full OLL and full PLL. OLL has 57 distint cases and PLL has 21 distint cases and you need to memorise way too many algorithms.
+      </br>
+      I do two step OLL and 2 step PLL (in the order given above) as I only need to know 4 algorithms and it is pretty simple.
+      </br></br>
+      If you want to learn to solve a rubik's cube there are some resources below that explain exactly how to solve one.
+      </br>
+      Remember that you need to learn the muscle memory for these algorithms. I don't think about it anymore, I just do the algorithm to move pieces without thinking about it. I mainly think about "Where are those pieces again?".
+      </br>
+      There are also many other ways to solve it but they generally solve it step by step with specific algorithms.
+      </br>
+      This is called the beginners method.
+      </br></br>
+      I think I spoilt the magic, sorry if I did!
+      </br>
+      <h2> Resources </h2>
+      <ul>
+        <li> "How to Solve a Rubik's Cube - Easy Method!!" by RedKB - https://www.youtube.com/watch?v=Wf3YgBZMVyw </li>
+        <li> Google "Rubik's Cube beginners method" or something similar and you will get a cheat sheet :) </li>        
+      </ul>
+      </br>
+      <img src="/Musings/pics/hamster_flowers.jpg" alt="Hamster with a flower crown" height="500" width="500"/>
+    </div>
+  </body>
+</html>
