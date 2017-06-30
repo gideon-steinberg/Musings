@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title> Gideon's Musings - Ways to Prove Things Part One </title>
+  </head>
+  <body>
+    <ol class="breadcrumb">
+      <li><a href="/Musings/">Home</a></li>
+      <li><a href="/Musings/tech.html">Technology</a></li>
+      <li><a href="/Musings/maths.html">Maths</a></li>
+      <li><a href="/Musings/society.html">Society</a></li>
+      <li><a href="/Musings/science.html">Science</a></li>
+      <li><a href="/Musings/other.html">Other</a></li>
+    </ol>
+    <div class="container-fluid">
+      <h1> Ways to Prove Things Part One </h1>
+      In maths things are proven to be true. How can you do this?
+      </br>
+      Maths is a logically field and so we need to use logic in order to prove things are true.
+      </br>
+      I find these methods quite interesting so I will be explaining a few ways to do so.
+      </br>
+      There will also be examples :)
+      <h2> The Direct Proof </h2>
+      This is the boring way of proving things. Basically take some things and do "maths" to them and prove something.
+      </br></br>
+      Example from wikipedia:
+      </br>
+      Proof that two even numbers (x and y) add together to get an even number.
+      </br>
+      Since x is even we can write x = 2a. (for some integer a)
+      </br>
+      Similarly y = 2b. (for some integer b)
+      </br>
+      x + y = 2a + 2b.
+      </br>
+      2a + 2b = 2(a+b).
+      </br>
+      2(a+b) = 2c and so is even. (for some integer c)
+      </br>
+      x + y is even. QED
+      </br></br>
+      Like I said, super boring.
+      <h2> Proof by Contradiction </h2>
+      Some things cannot be proved directly. We need to come up with other ways of proving things.
+      </br>
+      One such way is called proof by contradiction.
+      </br></br>
+      Essentially what we are trying to prove here is that something <strong>CANNOT</strong> be true.
+      </br>
+      The technique is quite brilliant, assume it is true and show that in such a system you run into a contradiction.
+      </br>
+      This is so beautiful because, while we cannot prove something is false, we instead prove it cannot be true.
+      </br></br>
+      <h3> Proof that the square root of 2 is irrational </h3>
+      This proof is an often cited example of proof by contradiction.
+      </br>
+      I am going to give the algebraic version of this proof below but in the resouces there is a great video by vihart (the best mathemusician) explaining the geometric version (using the pythagorean theorem) of this proof.
+      </br>
+      Go watch all of her videos, seriously. Do it. You will not regret it! You do not need much maths background, you will learn!
+      </br>
+      Yes, there is a version of this proof that uses right angle triangles. It is beautiful.
+      </br></br>
+      Firstly what is an rational number?
+      </br>
+      A rational number is a number x that can be written in the form x = a/b where a and b are integers with no factors (called the simplest form).
+      </br>
+      If a and b have factors you an divide them by their common factor, say c, and get a/c = d; a/c = e; x = d/e.
+      </br>
+      I hope that makes sense, it will be important :)
+      </br></br>
+      An irrational number is a number that is not rational. i.e. it cannot be written in the form x = a/b where a and b are integers with no factors.
+      </br></br>
+      The proof:
+      </br>
+      Assume the square root of 2 is rational.
+      </br>
+      It can therefore be written in the form a/b where a and b are integers with no factors.
+      </br>
+      square root of 2 = a/b
+      </br>
+      2 = a^2 / b^2 (square both sides)
+      </br>
+      2(b^2) = a^2
+      </br>
+      Note a^2 is even as it has a factor of 2.
+      </br>
+      An even number times an even number is an even number. An odd number times an odd number is an odd number. There is a way to prove this (which I cannot remember) but think about it.
+      </br>
+      Since the only way to get an even number by multiplying the same number twice is to start with an even number, a is even.
+      </br>
+      a = 2c as it is even (for some integer c)
+      </br>
+      2(b^2) = (2c)^2
+      </br>
+      2(b^2) = 4(c^2)
+      </br>
+      b^2 = 2(c^2)
+      </br>
+      Note b^2 is even as it has a factor of 2.
+      </br>
+      b is even (see above)
+      </br>
+      a and b share a common factor of 2.
+      </br>
+      This is a contridiction of how we set a and b.
+      </br>
+      Therefore our assumption cannot be true as it leads to a contridiction.
+      </br>
+      Therefore the square root of 2 is not rational. Therefore it is irrational.
+      </br>
+      QED
+      </br></br>
+      This proof is a great example of how counter intuative this proof technique can be. I love it!
+      <h2> Next time </h2>
+      Ok this got long really quickly. Next time Proof by construction, proof by induction and proof by exhaustion
+      <h2> Resources </h2>
+      <ul>
+        <li> Wikipedia list of proofs - https://en.wikipedia.org/wiki/Mathematical_proof#Methods </li>
+        <li> 'What was up with Pythagoras?' by Vihart - https://www.youtube.com/watch?v=X1E7I7_r3Cw </li>
+      </ul>
+      </br>
+      <img src="/Musings/pics/cute_baby_bats.jpg" alt="Cute Baby Bats" height="500" width="500"/>
+    </div>
+  </body>
+</html>
